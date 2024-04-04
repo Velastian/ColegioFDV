@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html, body{
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Ubuntu";
+    background-image: url(/public/img/body_fondo.jpg)
+  }
+
+.a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    align-content: normal;
+    padding: auto;
+}
+
+.b {
+    background-image: url(/public/img/Login_Fondo.png);
+    background-position: auto center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: auto 0 auto;
+    display: flex;
+    height: 312px;
+    max-width: 900px;
+    min-width: 900px;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+}
+
+.c {
+    box-sizing: border-box;
+    display: grid;
+    position: absolute;
+    justify-items: center;
+    gap: 15px;
+    top: 48%;
+    left: 83%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.c > img{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+@media all and (max-width:907px){
+    .c{
+        font-family: "Ubuntu";
+        box-sizing: border-box;
+        display: grid;
+        position: absolute;
+        gap: 15px;
+        color: #f9f9f9;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .c > img{
+        width: 150px;
+        height: 150px;
+        visibility: visible;
+    }
+    .b{
+        background-image: url("/public/img/body2.jpg");
+        width: 50%;
+        max-width: 300px;
+        min-width: 300px;
+        height: 480px;
+    }
+}
+
+.c > h2{
+    font-size: 36px;
+    margin: 0;
+}
+
+.c > button{
+    position: relative;
+    height: 40px;
+    width: 90%;
+    margin: 0;
+    font-size: 18px;
+    border-radius: 40px;
+    font-family: "Ubuntu";
+}
+
+.c > input{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    border-radius: 40px;
+}
+
+.c  select{
+    position: relative;
+    display: flex;
+    margin: 0;
+    width: 85%;
+    height: 30px;
+    font-size: 18px;
+    background-color: #e9e9ed;
+    color: #000;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    justify-content: space-between;
+    font-family: "Ubuntu";
+}
+
+.error{
+  color: red;
+  height: 0%;
+  padding: 0;
+}
+
+.hide{
+  display: none;
+}
+
+/*Menu button*/
+.select-menu {
+  position: relative;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: "Ubuntu";
+}
+
+.select-menu .select-btn{
+  display: flex;
+  margin: 0;
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #e9e9ed;
+  color: #000;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+
+.select-menu .options{
+  position: absolute;
+  align-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  color: #000;
+  background: #e9e9ed;
+  display: none;
+  z-index: 1;
+}
+
+.options .option{
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0 5px;
+  border-radius: 8px;
+
+}
+
+.select-menu.active .select-btn i{
+  transform: rotate(-180deg);
+}
+
+.select-menu.active .options{
+  display: block;
+}
+
+.options .option:hover{
+  background: #808080;
+}
+
+.option .option-text{
+  font-size: 18px;
+  top: 50%;
+  text-align: center;
+  color: #333;
+}
+
+
+/*Menu button*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="shortcut icon" href="/public/img/logo_icon.ico">
+      <title>Colegio Cristiano Fuente de Vida</title>
+      <link rel="stylesheet" href="/public/css/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <body>
+      <div class="a">
+        <div class="b">
+          <form class="c" id="login-form">
+            <img src="/public/img/logo_colegio.png" alt="">
+            <h2>Bienvenido</h2>
+            <input type="text" name="email" id="email" placeholder="Correo Electrónico">
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+            <select name="rol" id="rol">
+              <option value="Ninguno" selected disabled>Tipo de Usuario</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Secretario">Secretario</option>
+              <option value="Profesor">Profesor</option>
+            </select>
+            <!-- <div class="select-menu">
+              <div class="select-btn">
+                <span class="sBtn-text">Tipo de Usuario</span>
+                <i class="bx bx-chevron-down"></i>
+              </div>
+              <ul class="options" style="list-style: none;">
+                <li class="option">
+                    <span class="option-text">Administrador</span>
+                </li>
+                <li class="option">
+                    <span class="option-text">Secretario</span>
+                </li>
+                <li class="option">
+                    <span class="option-text">Profesor</span>
+                </li>
+              </ul>
+            </div> -->
+            <p class="error hide">Los datos son incorrectos</p>
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+      <script src="/public/script.js"></script>
+    </body>
+</html>

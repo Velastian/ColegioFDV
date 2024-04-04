@@ -1,0 +1,232 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    height: 40px;
+    background: #a3e4d7;
+    color: #272727;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+main{
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*container login lateral derecho*/
+.container_login{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container_login img{
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: white;
+}
+.container2 {
+    position: fixed;
+    display: flex;
+    height: 60px;
+    justify-content: end;
+    width: 100%;
+}
+
+.container2 :only-child:hover{
+    color: white;
+}
+
+.container_login2 {
+    position: fixed;
+    height: 60px;
+    width: 220px;
+    display: none;
+    margin-right: 3px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #117864;
+    border-radius: 3%;
+    cursor: pointer;
+}
+.container_login2 i{
+    font-size: 30px;
+}
+.container_login2 h4{
+    padding-right: 20px;
+}
+/*container login lateral derecho*/
+
+/*container main para las plantillas*/
+.main-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-left: 220px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*container main para las plantillas*/
+
+/*container para menu de navegacion*/
+
+.menu-icon1{
+    font-size: 20px;
+    width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu-icon1:hover{   
+    color: white;
+}
+
+.name__menu{
+    font-size: 20px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.name__menu > h2{
+    font-size: 20px;
+}
+
+.name__menu i{
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+/*Configuracion del menu*/
+
+.menu__side {
+    width: 220px;
+    height: 100%;
+    background: #117864;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    border-radius: 1%;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #117864;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar{
+    display: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.options__menu{
+    padding: 10px 30px;
+    position: absolute;
+    top: 40px;
+}
+
+.options__menu a{
+    color: black;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+    gap: 20px;
+}
+
+.options__menu a:hover{
+    color: white;
+}
+
+.menu__side .options__menu .side-menutop a{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .side-menutop span{
+    cursor: pointer;
+    width: 100%;
+}
+
+.options__menu li.active a::before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+.options__menu li.active a::after{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+.options__menu .side-menutop li.active a{
+    color: white;
+}
+
+/* SIDEBAR */
+
+/* Codigo para javascript*/
+.hide{
+    width: 80px;
+}
+
+.display_userName{
+    display: none;
+}
+
+.hide-content{
+    padding-left: 80px;
+}
+
+.appear-container2{
+    display: flex;
+}
+/* Codigo para javascript*/
